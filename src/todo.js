@@ -9,7 +9,7 @@ const Todo = (title, description, dueDate, priority) => {
   const setDueDate = (newDueDate) => dueDate = newDueDate;
   const setPriority = (newPriority) => priority = newPriority;
 
-  const read = () => (console.log({title, description, dueDate, priority})); //test function
+  const read = () => (console.log({title, description, dueDate, priority})); //test function #REMOVE WHEN DONE.
 
   return { getTitle, getDescription, getDueDate, getPriority, setTitle, setDescription, setDueDate, setPriority, read };
 };
