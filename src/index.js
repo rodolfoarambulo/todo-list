@@ -1,5 +1,18 @@
 import Todo from "./todo"
-import Project from "./project";
+import { Project, ProjectList } from "./project";
+import './style.css'
+
+const sidebar = document.querySelector('#sidebar-content');
+const project = Project('Default');
+
+
+// *********** TEST TO DELETE LATER ***************
+// project.addTodo(Todo('Eat', 'Best activity', '09-29-23', 'p1'));
+// ProjectList.addProject(project);
+// console.log(ProjectList.getProject(0).getName());
+// ProjectList.removeProject(0);
+// console.log(ProjectList.getProject(0));
+
 
 // const project = Project('Today');
 // console.log(project.getName());

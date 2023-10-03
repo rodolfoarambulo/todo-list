@@ -1,3 +1,14 @@
+const ProjectList = (() => {
+  let _projectList = new Array();
+
+  const getProject = (index) => _projectList[index];
+
+  const addProject = (project) => _projectList.push(project);
+  const removeProject = (index) => _projectList.splice(index, 1);
+
+  return { getProject, addProject, removeProject };
+})();
+
 const Project = (name) => {
   let _todoList = new Array();
 
@@ -13,4 +24,4 @@ const Project = (name) => {
   return { getName, getTodo, getLength, setName, addTodo, removeTodo }
 }
 
-export default Project;
+export { Project, ProjectList };
