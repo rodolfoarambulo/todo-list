@@ -1,5 +1,5 @@
 const ProjectList = (() => {
-  let _projectList = new Array();
+  let _projectList = [];
 
   const getProject = (index) => _projectList[index];
 
@@ -10,7 +10,7 @@ const ProjectList = (() => {
 })();
 
 const Project = (name) => {
-  let _todoList = new Array();
+  let _todoList = [];
 
   const getName = () => name;
   const getTodo = (index) => _todoList[index];
